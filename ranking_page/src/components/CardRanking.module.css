@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&family=Work+Sans&display=swap');
+
+.ranking_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    background: var(--background-secondary, #3B3B3B);
+    /*padding: 0 3.1vw;*/
+    height: auto;
+    padding: 12px 20px;
+}
+
+.ranking_cardp2 > div > p{
+    background: transparent;
+}
+
+.ranking_card > .ranking_cardp1{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.ranking_number{
+    color: var(--caption-label-text, #858584);
+    text-align: center;
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    width: 24px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 20px;    
+    background: var(--background, #2B2B2B);
+    display: flex;
+    width: 30px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.ranking_card > .ranking_cardp1 > div{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding-left: 4%;
+    transition: all 0.3s ease;
+    gap: 20px;
+}
+
+.ranking_card > .ranking_cardp1 > div:hover{
+    transform: scale(0.95, 0.95);
+    transform-origin: center; 
+}
+
+.ranking_avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    gap: 10px;
+    /*width: 9%;
+    gap: 10px;*/
+}
+
+.ranking_artist{
+    color: #FFF;
+    font-family: Work Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; 
+    text-transform: capitalize;
+    letter-spacing: 0.00px;
+    margin: 0;
+}
+
+
+/* PART 2*/
+
+.ranking_card > .ranking_cardp2{
+    display: flex;
+    flex-grow: 1;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.stats_change{
+    color: var(--green, #00AC4F);
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.stats_nfts{
+    color: var(--text, #FFF);
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.stats_volume{
+    color: var(--text, #FFF);
+    font-family: Space Mono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
