@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export default function FilterRanking() {
     const [barFocus, setBarFocus] = useState(0);
-    let todayStyle, thisWeekStyle, thisMounthStyle, allTimeStyle;
+    let todayStyle, thisWeekStyle, thisMonthStyle, allTimeStyle;
     const borderStyles = {
         noBorder: {
             borderBottom: 'none',
@@ -31,25 +31,27 @@ export default function FilterRanking() {
     if(barFocus === 0){
         todayStyle = borderStyles.selectedBorder;
         thisWeekStyle = borderStyles.noBorder;
-        thisMounthStyle = borderStyles.noBorder;
+        thisMonthStyle = borderStyles.noBorder;
         allTimeStyle = borderStyles.noBorder; 
     }else if(barFocus === 1){
         todayStyle = borderStyles.noBorder;
         thisWeekStyle = borderStyles.selectedBorder;
-        thisMounthStyle = borderStyles.noBorder;
+        thisMonthStyle = borderStyles.noBorder;
         allTimeStyle = borderStyles.noBorder; 
     }else if(barFocus === 2){
         todayStyle = borderStyles.noBorder;
         thisWeekStyle = borderStyles.noBorder;
-        thisMounthStyle = borderStyles.selectedBorder;
+        thisMonthStyle = borderStyles.selectedBorder;
         allTimeStyle = borderStyles.noBorder;
     }else if(barFocus === 3){
         todayStyle = borderStyles.noBorder;
         thisWeekStyle = borderStyles.noBorder;
-        thisMounthStyle = borderStyles.noBorder;
+        thisMonthStyle = borderStyles.noBorder;
         allTimeStyle = borderStyles.selectedBorder;
     }
-
+    
+    
+    
     return(
         <div className={styles.search_nft_selector}>
             <button onClick={handleClick} id='today' className={styles.titles} style={todayStyle}>
@@ -58,7 +60,7 @@ export default function FilterRanking() {
             <button onClick={handleClick} id='thisWeek' className={styles.titles} style={thisWeekStyle}>
                 This Week
             </button>
-            <button onClick={handleClick} id='thisMounth' className={styles.titles} style={thisMounthStyle}>
+            <button onClick={handleClick} id='thisMounth' className={styles.titles} style={thisMonthStyle}>
                 This Month
             </button>
             <button onClick={handleClick} id='allTime' className={styles.titles} style={allTimeStyle}>

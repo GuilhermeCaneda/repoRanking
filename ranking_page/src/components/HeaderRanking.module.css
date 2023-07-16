@@ -7,18 +7,25 @@
     border-radius: 20px;
     border: 1px solid var(--background-secondary, #3B3B3B);
     padding: 0px 30px;
+    height: 48px;
     
+   
+    line-height: 22.4px;
 }
-
+.header_ranking > p{
+    padding: 0;
+}
 .header_ranking > .headerp1{
+    margin-top: -2px;
     display: flex;
     flex-grow: 1;
     flex-flow: row nowrap;
-    gap: 33px;
+    gap: 30px;
     align-items: center;
 }
 
 .header_ranking > .headerp2{
+    margin-top: -2px;
     display: flex;
     flex-grow: 1.2;
     flex-flow: row nowrap;

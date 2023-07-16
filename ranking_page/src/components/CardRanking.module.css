@@ -5,12 +5,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     border-radius: 20px;
     background: var(--background-secondary, #3B3B3B);
-    /*padding: 0 3.1vw;*/
     height: auto;
     padding: 12px 20px;
+    gap: 20px;  
 }
 
 .ranking_cardp2 > div > p{
@@ -32,21 +31,19 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; 
-    width: 24px;
-    justify-content: center;
     flex-shrink: 0;
     border-radius: 20px;    
     background: var(--background, #2B2B2B);
     display: flex;
     width: 30px;
-    align-items: flex-start;
+    height: 28px;
+    align-items: center;    
+    justify-content: center;
     gap: 10px;
-    flex-shrink: 0;
 }
 
 .ranking_card > .ranking_cardp1 > div{
     display: flex;
-    flex-grow: 1;
     flex-flow: row nowrap;
     align-items: center;
     padding-left: 4%;
@@ -88,7 +85,8 @@
     flex-grow: 1;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap:143px
 }
 
 .stats_change{

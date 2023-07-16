@@ -13,7 +13,7 @@ export default function CardRanking(props) {
             </div>
 
             <div className={styles.ranking_cardp2}>
-                <p className={styles.stats_change}>{props.change}%</p>
+                <p className={styles.stats_change}>+{props.change}%</p>
                 <p className={styles.stats_nfts}>{props.nfts}</p>
                 <p className={styles.stats_volume}>{props.volume} ETH</p>
             </div>
