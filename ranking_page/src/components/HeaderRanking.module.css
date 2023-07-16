@@ -5,7 +5,7 @@
     justify-content: space-between;
     border-radius: 20px;
     border: 1px solid var(--background-secondary, #3B3B3B);
-    padding: 0px 30px;
+    padding: 0px 20px;
     height: 48px;
     line-height: 22.4px;
     margin-top: -2px;
@@ -37,4 +37,29 @@
     width: 160px;
     flex-direction: column;
     align-items: flex-start;
+}
+
+@media (max-width: 1279px){
+    .header_ranking{
+        padding: 0px 25px;
+    }
+    .header_ranking > .headerp1{
+        display: flex;
+        width: 430px;
+        align-items: center;
+        gap: 30px;
+        flex-shrink: 0;
+    }
+    .headerp2{
+        width: 220px;
+    }
+    .header_ranking > .headerp2 > p{    
+        display: flex;
+        width: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #nftsHeaderRanking{
+        display: none;
+    }
 }

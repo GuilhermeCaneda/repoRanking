@@ -9,8 +9,8 @@ export default function HeaderRanking() {
                 <p>Artist</p>
             </div>
             <div className={styles.headerp2}>
-                <p>Change</p>
-                <p>NFTs Sold</p>
+                <p id={styles.changeHeaderRanking}>Change</p>
+                <p id={styles.nftsHeaderRanking}>NFTs Sold</p>
                 <p>Volume</p>
             </div>
         </div>
