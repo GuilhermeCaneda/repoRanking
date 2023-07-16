@@ -1,6 +1,7 @@
 import Ranking from "./components/Ranking";
 
 function App() {
+  
   return (
     <div>
       <Ranking/>
